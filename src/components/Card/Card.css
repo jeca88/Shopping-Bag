@@ -1,0 +1,20 @@
+.card {
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+     border: 1px solid gray;
+    margin: 10px;
+    width: 250px;
+    padding: 5px;
+    background-color: rgb(223, 170, 196);
+}
+
+.card img {
+    width: 200px;
+}
+
+.pageBtn {
+    color: black;
+    background-color: blanchedalmond;
+    border: 1px solid gray;
+}

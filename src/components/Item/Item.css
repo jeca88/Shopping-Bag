@@ -1,0 +1,31 @@
+.checkout-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkout-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.remove {
+    width: 50%;
+    padding: 5px;
+}
+
+.checkout-controls input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.checkout-prev {
+    padding: 5px;
+}
+
+.checkout-next {
+    padding: 5px;
+}

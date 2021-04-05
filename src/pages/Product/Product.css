@@ -1,0 +1,9 @@
+.Product {
+    width: 100%;
+    background-color: rgb(235, 229, 234);
+    margin-top: 30px;
+}
+
+.Product img {
+    width: 40%;
+}
