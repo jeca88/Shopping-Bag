@@ -1,6 +1,5 @@
 .Checkout {
     width: 100%;
-    background-color: rgb(245, 238, 243);
     margin-top: 30px;
     
 }
@@ -9,4 +8,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }

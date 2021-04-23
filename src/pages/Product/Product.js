@@ -6,15 +6,17 @@ const Product = (props) => {
     const products = useContext(productsContext);
 
     const product = products.find(e => e.id === props.match.params.id )
-    console.log(product)
+    if(!product) {
+        return null;
+    }
     return (
         <div className="Product">
            <h3>{product.name}</h3> 
-           <div>
+           <div className='product-content'>
                 <img src={product.image} alt="img"/>
-                <p>{product.price}</p>
+                <p><b>Price:</b> {product.price}</p>
            </div>
-           <p>{product.description}</p>
+           <p><b>Description:</b> {product.description}</p>
         </div>
     )
 }

@@ -27,13 +27,13 @@ const Card = (props) => {
             <h3>{product.name}</h3>
             <img src={product.image} alt="img"/>
             <p>{product.price}</p>
-            <Link className="pageBtn" to={`/products/${product.id}`}>Details</Link>
+            <Link className="details-btn" to={`/products/${product.id}`}>Details</Link>
             <div className='controls'>
                 <button className='prev' onClick={() => setQuantity(quantity - 1)}>-</button>
                 <input type='text' value={quantity} pattern="[^0-9]*" onChange={(e) => setQuantity(e.target.value)} />
                 <button className='next' onClick={() => setQuantity(quantity + 1)}>+</button>
             </div>
-            <button onClick={() => addToCart(product, quantity)}>Add to card</button>
+            <button className='add-btn' onClick={() => addToCart(product, quantity)}>Add to card</button>
         </div>
     )
 }

@@ -20,7 +20,7 @@ const Item = ({item, index,  removeItem, calculatePrice}) => {
                     <img src={item.article.image} alt="img" />
                     <p>{item.article.price}</p>
                     <div className='checkout-controls'>
-                         <button className='remove' onClick={()=> removeItem(index)}>Remove From Cart</button>
+                         <button className='remove' onClick={()=> removeItem(index)}>Remove</button>
                          <div>
                             <button className='checkout-prev' onClick={() => setQuantityOfCart(item.quantity - 1)}>-</button>
                             <input type='text' value={item.quantity} onChange={e=> setQuantityOfCart(e.target.value)}/>
